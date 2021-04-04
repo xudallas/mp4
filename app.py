@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 from sklearn.externals import joblib
 import pandas as pd
 import numpy as np
-#from xgboost import XGBClassifier
+from xgboost import XGBClassifier
 
 app = Flask(__name__)
 
