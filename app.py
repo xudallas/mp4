@@ -34,9 +34,9 @@ def predict():
         ml_model = joblib.load(mul_reg)
         model_predcition = ml_model.predict([pred_args])
         if model_predcition == 1:
-            res = 'Affected'
+            res = '<span style = "color:#FF0000">Affected</span>'
         else:
-            res = 'Not affected'
+            res = '<span style = "color:#7AFA16">Not affected</span>'
         #return res
     return render_template('predict.html', prediction = res)
 
