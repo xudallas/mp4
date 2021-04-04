@@ -29,7 +29,7 @@ def predict():
 
         pred_args = [age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal]
 
-        mul_reg = open('xgb.pkl','wr')
+        mul_reg = open('xgb.pkl','rb')
         ml_model = joblib.load(mul_reg)
         model_predcition = ml_model.predict([pred_args])
         if model_predcition == 1:
