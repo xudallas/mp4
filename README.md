@@ -31,5 +31,5 @@ Use this for prediction for model and to show the output
 
 ### 8. Deployment on Heroku
 
-https://heartdeseaseprediction.herokuapp.com/
+https://heart-disease-predictor-cs6440.herokuapp.com//
 
